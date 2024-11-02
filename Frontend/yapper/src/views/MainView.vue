@@ -1,4 +1,5 @@
 <script setup>
+import Post from '@/components/PostComponent.vue'
 </script>
 
 <template>
@@ -83,7 +84,9 @@
         </div>
       </div>
 
-      <div class="bottom"></div>
+      <div class="middle_bottom">
+        <Post class="post"/>
+      </div>
     </div>
 
     <div class="right"></div>
@@ -262,4 +265,13 @@ input[type="submit"] {
 .router_link_text:hover {
   color: #1DA1F2;
 }
+
+.post {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
 </style>
